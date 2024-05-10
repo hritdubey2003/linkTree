@@ -1,0 +1,11 @@
+<%= stylesheet_link_tag "treem" %>
+<h1>Editing tree</h1>
+<div class = "align">
+<%= render "form", tree: @tree %>
+
+<br>
+
+<div class = "button">
+  <%= link_to "Show this tree", @tree %> 
+  <%= link_to "Back to trees", trees_path %>
+</div>

@@ -1,0 +1,14 @@
+h2{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.field{
+    margin-left: 0%;
+}

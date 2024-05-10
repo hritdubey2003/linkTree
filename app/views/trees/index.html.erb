@@ -1,0 +1,21 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Trees</h1>
+<%= stylesheet_link_tag "treem" %>
+<div class = "align">
+<div id="trees">
+  <% @trees.each do |tree| %>
+    <%= render tree %>
+    <p>
+      <%= link_to "Show this tree", tree %>
+    </p>
+  <% end %>
+</div>
+</div>
+<div class = "align">
+<%= link_to "New tree", new_tree_path %>
+</div>
+
+<div class= "align">
+<%= link_to "view my Tree", current_user.tree %>
+</div>

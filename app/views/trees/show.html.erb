@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @tree %>
+
+ <div class="feature">
+  <%= link_to "Edit this tree", edit_tree_path(@tree) %> 
+</div>
+<div class="feature">
+  <%= link_to "Back to trees", trees_path %>
+</div>
+<div class = "feature">
+  <%= button_to "Delete my tree!", @tree, method: :delete %>
+</div>
