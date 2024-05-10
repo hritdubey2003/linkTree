@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'render/index'
   devise_for :controllers
   devise_for :users, controllers: {
     sessions: 'users/sessions',
@@ -16,7 +17,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "home#index"
-
+  
   devise_scope :user do
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
